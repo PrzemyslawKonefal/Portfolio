@@ -163,6 +163,7 @@ session_start();
       </div>
     </div>
     <div class="category">
+<<<<<<< HEAD
           <div class="topic">
             <div class="triangle"></div>
               <div class="title"><h2>Umiejętności</h2></div>
@@ -219,6 +220,45 @@ session_start();
           </div>
         </div>
 
+=======
+      <div class="topic">
+        <div class="triangle"></div>
+          <div class="title"><h2>Umiejętności</h2></div>
+        <div class="triangle triangle-right"></div>
+      </div>
+      <div class="">
+        <p></p>
+      </div>
+      <div class="container category-explanation">
+          <div class="main-explanation">
+            <p>Kliknij na poszczególne nazwy technologii/języków by zobaczyć mój poziom ich znajomości. Naturalnie, uważam, że w każdym temacie pozostaje jeszcze wiele do nauki, dlatego za punkt bazowy obrałem płynność posługiwania się</p>
+          </div>
+          <img src="images/Avatar.png" alt="Person">
+      </div>
+      <div class="main-skills-wrap">
+      <div class="panel">
+        <img id="technologyPicture" src="images/qm.png" alt="Technologia">
+        <ul>
+          <li class="AngularJS" value="50">AngularJS</li>
+          <li class="HTML" value="100">HTML</li>
+          <li class="MySQL" value="70">MySQL</li>
+          <li class="Python" value="50">Python</li>
+          <li class="JavaScript" value="85">JavaScript</li>
+          <li class="CSS" value="90">CSS</li>
+          <li class="C" value="70">C++</li>
+          <li class="Jquery" value="90">Jquery</li>
+          <li class="Bootstrap" value="70">Bootstrap</li>
+          <li class="PHP" value="40">PHP</li>
+          <li class="Gimp" value="80">Gimp</li>
+        </ol>
+      </div>
+      <div class="result-box">
+          <div class="graph">
+          </div>
+          <h1 class="percentage"></h1>
+      </div>
+</div>
+>>>>>>> 79f813b02c590157a742991d8ddbc23b2f2eb307
     </div>
     <div class="category">
       <div class="topic">
@@ -227,6 +267,7 @@ session_start();
         <div class="triangle triangle-right"></div>
       </div>
       <div class="projects">
+<<<<<<< HEAD
                     <div class="project">
                                 <div class="project-decription">
                                   <a class="project-name" href="http://chessyes.eu">ChessYes</a>
@@ -297,6 +338,47 @@ session_start();
                                               <img class="project-photo" src="images/project3.png">
                                             </div>
                                           </div>
+=======
+        <div class="project">
+                    <div class="project-decription">
+                      <a class="project-name" href="http://chessyes.eu">ChessYes</a>
+                      <p><strong>ChessYes to witryna pozwalająca na rozwój umiejętności szachowych.</strong>   <br> <br>
+                        Do dyspozycji są trzy różne metody nauki: rozwiązywanie zadań kombinacyjnych o różnym poziomie trudności, analizowanie partii profesjonalnych graczy oraz trenowanie zasięgu widzenia na szachownicy w minigrze zręcznościowej.
+                        Kombinacje oraz mecze pobierane są dynamicznie z bazy danych za pomocą technologii AJAX. Poprawność odpowiedzi kombinacji jest również sprawdzana dynamicznie by użytkownik nie mógł podpatrzeć jej przed wykonaniem ruchu.
+                        W projekcie wykorzystana została biblioteka <a href="http://chessboardjs.com">chessboardjs</a> odpowiedzialna za wyświetlenie szachownicy i bierek.
+                        Baza zadań oraz partii stale jest powiększana.</p>
+                    </div>
+                    <div class="project-technologies">
+                        <div class="container">
+                          <div class="technology HTML">HTML</div>
+                          <div class="technology CSS">CSS</div>
+                          <div class="technology JavaScript"> JavaScript</div>
+                          <div class="technology Jquery">Jquery</div>
+                          <div class="technology MySQL">MySQL</div>
+                          <div class="technology PHP">PHP</div>
+                      </div>
+                      <img class="project-photo" src="images/project1.png">
+                    </div>
+                </div>
+            <div class="project">
+                        <div class="project-decription">
+                           <a class="project-name" href="http://catch-up-time.com">Catch Up Time</a>
+                           <p><strong> Catch up time to aplikacja, która ma za zadanie zwiększenie efektywności nauki/pracy poprzez organizację czasu.</strong> <br> <br>
+                           Strona opiera się o metodę Pomodoro. Pomodoro to nauko udowodniona technika przyspieszająca proces nauki/pracy.
+                           Aplikacja, jednak nie ogranicza się jedynie do metody Pomodoro. Pozwala na dowolne ustawianie zegarów, zmianę dźwięku poszczególnych alarmów, zatrzymywanie i odliczanie dowolnych zegarów czy zmianę wyglądu zegarów lub ich ułożenia.
+                           Dodatkowo, aplikacja jest wyposażona w podręczną, dynamiczną listę 'to do', która jest niezbędnym elementem każdego efektywnościowego świra! Obecnie strona jest w języku angielskim. Nowy update wprowadzi język polski, zapisywanie ulubionych ustawień na urządzeniu oraz możliwość otrzymywania powiadomień. </p>
+                        </div>
+                        <div class="project-technologies">
+                              <div class="container">
+                              <div class="technology HTML">HTML</div>
+                              <div class="technology CSS">CSS</div>
+                              <div class="technology JavaScript"> JavaScript</div>
+                              <div class="technology Jquery">Jquery</div>
+                          </div>
+                          <img class="project-photo" src="images/project2.png">
+                        </div>
+                      </div>
+>>>>>>> 79f813b02c590157a742991d8ddbc23b2f2eb307
       </div>
       </div>
       <div class="category">
@@ -321,7 +403,11 @@ session_start();
                  <a href="mailto:przemyslaw.konefal@gmail.com"><i class="far fa-envelope"></i>  przemyslaw.konefal@gmail.com</a> lub kontakt telefoniczny <a href="tel:+48694795314"> <i class="fas fa-phone"></i>  694 795 314</a>
                  <span class="mid-break">Możesz mnie znaleźć także na</span>
                  <span class="media">
+<<<<<<< HEAD
                 <a href="https://www.facebook.com/przemyslawkonefal1"><i class="fab fa-facebook-square fa-2x"></i></a>
+=======
+                <a href="https://www.facebook.com/unitedforglory"><i class="fab fa-facebook-square fa-2x"></i></a>
+>>>>>>> 79f813b02c590157a742991d8ddbc23b2f2eb307
                  <a href="https://github.com/PrzemyslawKonefal"><i class="fab fa-github-square fa-2x"></i></a>
                </span>
                 </p>

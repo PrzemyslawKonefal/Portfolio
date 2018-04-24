@@ -1,8 +1,14 @@
 $(document).ready(function() {
 
+<<<<<<< HEAD
   // scroll navbar
       $(window).scroll(function () {
           var h = window.innerHeight * 3 / 5;
+=======
+  // scroll navbar Logiczne
+      $(window).scroll(function () {
+          var h = window.innerHeight / 2;
+>>>>>>> 79f813b02c590157a742991d8ddbc23b2f2eb307
           var scroll = $(this).scrollTop();
           if (scroll) {
             $(".navbar").css('background', 'rgba(24, 24, 24, 0.6)');
@@ -19,10 +25,17 @@ $(document).ready(function() {
           if(scroll>=$('.category').eq(1).position().top - h){
             setTimeout(function(){
               $('.category-explanation').find('img').css('opacity', '1');
+<<<<<<< HEAD
               $('.category-explanation').find('img').animate({top: "0"}, 700);
                 setTimeout(function(){
                 $('.main-explanation').css('opacity', '1');
               }, 1000);
+=======
+              $('.category-explanation').find('img').animate({top: "0"}, 1500);
+                setTimeout(function(){
+                $('.main-explanation').css('opacity', '1');
+              }, 1500);
+>>>>>>> 79f813b02c590157a742991d8ddbc23b2f2eb307
             }, 100);
           }
           if(scroll>=$('.category').eq(2).position().top-h){
