@@ -26,6 +26,74 @@ a:hover{
   width: 100%;
   height: 100%;
   background: linear-gradient(45deg, rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.4) );
+  z-index: 10000;
+}
+.loader{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: #133333;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes lds-ripple {
+  0% {
+  top: 96px;
+  left: 96px;
+  width: 0;
+  height: 0;
+  opacity: 1;
+  }
+  100% {
+  top: -2px;
+  left: -2px;
+  width: 196px;
+  height: 196px;
+  opacity: 0;
+  }
+}
+@-webkit-keyframes lds-ripple {
+0% {
+  top: 96px;
+  left: 96px;
+  width: 0;
+  height: 0;
+  opacity: 1;
+}
+100% {
+  top: -2px;
+  left: -2px;
+  width: 196px;
+  height: 196px;
+  opacity: 0;
+}
+}
+.lds-ripple div {
+  box-sizing: content-box;
+  position: absolute;
+  border-width: 4px;
+  border-style: solid;
+  opacity: 1;
+  border-radius: 50%;
+  -webkit-animation: lds-ripple 1.5s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  animation: lds-ripple 1.5s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(1) {
+  border-color: #a37100;
+}
+.lds-ripple div:nth-child(2) {
+  border-color: #a37100;
+  -webkit-animation-delay: -0.75s;
+  animation-delay: -0.75s;
+}
+.lds-ripple {
+  position: relative;
+  width: 200px !important;
+  height: 200px !important;
+  -webkit-transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+  transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
 }
 .landing{
   width: 100%;

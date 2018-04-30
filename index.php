@@ -46,6 +46,13 @@ $_SESSION['language'] = 'polish';
         </div>
     </nav>
     <div class="cover"></div>
+    <div class="loader">
+      <div class="lds-css ng-scope">
+        <div style="width:100%;height:100%" class="lds-ripple">
+          <div></div><div></div>
+        </div>
+      </div>
+    </div>
     <div class="landing">
     <img src="images/bubble.png" class="bubble">
     <img src="images/bubble.png" class="bubble">

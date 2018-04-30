@@ -13,7 +13,7 @@ $(document).ready(function() {
 
           if(scroll>=$('#hero').position().top -h){
             setTimeout(function(){
-              $(".main-category").animate({left: "-5px"}, 3500);
+              $(".main-category").animate({left: "-5px"}, 2000);
             }, 100);
           }
           if(scroll>=$('.category').eq(1).position().top - h){
@@ -28,7 +28,7 @@ $(document).ready(function() {
           if(scroll>=$('.category').eq(2).position().top-h){
             $('.project').each(function(){
               if(scroll>=$('.category').eq(2).position().top - h + $(this).position().top){
-                $(this).animate({right: "0"}, 1500);
+                $(this).animate({right: "0"}, 750);
               }
             })
 ;
@@ -41,11 +41,6 @@ $(document).ready(function() {
             $('.additional').animate({top: "-70px"}, 500);
           }
       });
-      setTimeout(function(){
-        $(".me").animate({opacity: "1", padding: "75px"}, 1500);
-      }, 500);
-
-
 
         //picture load
       $(".panel li").click( function(){
@@ -60,9 +55,8 @@ $(document).ready(function() {
             $(".percentage").text(percentCounter + "%");
             if(percentCounter >= value) clearInterval(interval);
             percentCounter++;
-        },60);
+        },30);
 
-        //remove previous disable clicking
         $(".percent-piece").remove();
         $(".panel li").css("pointer-events", "none");
         //create new pieces
@@ -82,9 +76,9 @@ $(document).ready(function() {
 
         function displayPiece(){
           pieceNumber--;
-          $(".percent-piece").eq(pieceNumber).animate({right: "0"}, 600);
+          $(".percent-piece").eq(pieceNumber).animate({right: "0"}, 300);
           if(pieceNumber === 0){$(".panel li").css("pointer-events", "auto"); return;}
-          setTimeout(function(){displayPiece()}, 600);
+          setTimeout(function(){displayPiece()}, 300);
       }
       });
 
@@ -101,19 +95,28 @@ $(document).ready(function() {
               $('.bubble').eq(i).stop().delay(randomDelay).animate({top: "-70", left: randomEndWidth}, 7000);
           }
       }
+
         $(".bubble").hover(function(){
           $(this).css({transform: "scale(1.3, 1.3)", opacity: "0"});
         });
-        moveBubbles();
-        setInterval(function(){moveBubbles()},14000)
+
+        $(".nav-item").click(function() {
+          var destination = $(".category").eq($(this).index()).offset().top - 85;
+            $('html, body').animate({
+                scrollTop: destination
+            }, 1000);
+        });
+
+        //execute when the web is loaded loaded
+        $(".loader").animate({opacity: "0"}, 500);
+        setTimeout(function(){
+          $(".me").animate({opacity: "1", padding: "75px"}, 1500);
+          $(".cover").css("z-index", "0");
+          $(".loader").css("display", "none");
+          moveBubbles();
+          setInterval(function(){moveBubbles()},14000);
+        }, 500);
 });
 
 
 //scroll to the topics
-
-$(".nav-item").click(function() {
-  var destination = $(".category").eq($(this).index()).offset().top - 85;
-    $('html, body').animate({
-        scrollTop: destination
-    }, 1000);
-});

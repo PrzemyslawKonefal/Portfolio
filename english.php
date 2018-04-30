@@ -321,7 +321,7 @@ $_SESSION['language'] = 'english';
                   <button type="submit" name="button" id = 'scrollBottom'>Wyślij</button>
                   <?php if (isset($_SESSION['MailSent']) and $_SESSION['MailSent'] == true) {
                     $_SESSION['MailSent'] = false;
-                    echo "<p style = 'color: #6fbd2a;'>Wiadomość wysłana pomyślnie! :)</p>";
+                    echo "<p style = 'color: #6fbd2a;'>The message has been sent successfully! :)</p>";
                   } ?>
                   <div class="additional">
                     You can also use the contact form :)
