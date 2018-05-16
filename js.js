@@ -110,7 +110,7 @@ $(document).ready(function() {
         //execute when the web is loaded loaded
         $(".loader").animate({opacity: "0"}, 500);
         setTimeout(function(){
-          $(".me").animate({opacity: "1", padding: "75px"}, 1500);
+          $(".me").animate({opacity: "1", padding: "75px 0"}, 1500);
           $(".cover").css("z-index", "0");
           $(".loader").css("display", "none");
           moveBubbles();

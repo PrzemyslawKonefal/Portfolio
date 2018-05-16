@@ -225,7 +225,10 @@ $_SESSION['language'] = 'polish';
                                     Kombinacje oraz mecze pobierane są dynamicznie z bazy danych za pomocą technologii AJAX. Poprawność odpowiedzi kombinacji jest również sprawdzana dynamicznie by użytkownik nie mógł podpatrzeć jej przed wykonaniem ruchu.
                                     W projekcie wykorzystana została biblioteka <a href="http://chessboardjs.com">chessboardjs</a> odpowiedzialna za wyświetlanie szachownicy i bierek.
                                     Baza zadań oraz partii jest stale powiększana. <br>
-                                    <a href="https://github.com/PrzemyslawKonefal/Chess-Website"><i class="fab fa-github-square fa-2x" style="margin:50px 0;"></i></a>
+                                    <div class="project-links">
+                                    <a href="https://github.com/PrzemyslawKonefal/Chess-Website"><i class="fab fa-github-square fa-2x"></i></a>
+                                    <button class="live-button"><a href="http://chessyes.eu">Live</a></button>
+                                    </div>
                                   </p>
 
 
@@ -249,10 +252,11 @@ $_SESSION['language'] = 'polish';
                                       Aplikacja pozwala na generowanie dwuwymiarowych planów budynków z podziałem na piętra i pomieszczenia.
                                       Tworzenie legendy przestrzeni wraz z przypisaniem do nich kolorów sprawia, że model jest bardziej przejrzysty oraz ułatwia nawigację.
                                       Właściowścią kreatora jest także sprawdzanie najważniejszych zasad związanych z tworzeniem owych modeli. <br>
-                                      <a href="https://github.com/PrzemyslawKonefal/BIM-model-creator"><i class="fab fa-github-square fa-2x" style="margin:50px 0;"></i></a>
+                                      <div class="project-links">
+                                      <a href="https://github.com/PrzemyslawKonefal/BIM-model-creator"><i class="fab fa-github-square fa-2x"></i></a>
+                                      <button class="live-button"><a href="http://przemkon.pl/projects/BIM">Live</a></button>
+                                      </div>
                                     </p>
-
-
                                   </div>
                                   <div class="project-technologies">
                                         <div class="container">
@@ -272,7 +276,10 @@ $_SESSION['language'] = 'polish';
                                                Aplikacja jednak nie ogranicza się jedynie do metody Pomodoro. Pozwala na dowolne ustawianie zegarów, zmianę dźwięku poszczególnych alarmów, zatrzymywanie i odliczanie dowolnych zegarów czy zmianę wyglądu zegarów lub ich ułożenia.
                                                Dodatkowo, witryna jest wyposażona w listę 'to do',
                                                która jest niezbędnym elementem dla każdego kto szanuje swój czas! <br>
-                                               <a href="https://github.com/PrzemyslawKonefal/Pomodoro-clock"><i class="fab fa-github-square fa-2x" style="margin:50px 0;"></i></a>
+                                               <div class="project-links">
+                                               <a href="https://github.com/PrzemyslawKonefal/Pomodoro-clock"><i class="fab fa-github-square fa-2x"></i></a>
+                                               <button class="live-button"><a href="http://catch-up-time.com">Live</a></button>
+                                               </div>
                                               </p>
 
                                             </div>

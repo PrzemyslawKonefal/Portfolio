@@ -9,6 +9,7 @@ body{
   font-family: 'Kelly Slab', cursive;
   font-size: 1.2em;
   overflow-x: hidden;
+  width: 100vw;
 }
 a{
   color: #a37100;
@@ -125,6 +126,9 @@ a:hover{
   top: 0px;
   width: 100%;
   opacity: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .me img{
   display: block;
@@ -458,6 +462,7 @@ a:hover{
   display: flex;
   flex-direction: column;
   color: #fff;
+  overflow-x: hidden;
 }
 .project:nth-of-type(2n){
   flex-direction: row-reverse;
@@ -542,6 +547,45 @@ display: block;
   min-width: 300px;
   overflow: hidden;
 }
+.project-links{
+  display: flex;
+  justify-content: center;
+}
+.project-links > *{
+  margin: 10px 30px;
+}
+.live-button{
+  background: #a37100;
+  border: none;
+  padding: 0 40px;
+  border-radius: 10px;
+  height: 38px;
+  cursor: pointer;
+  transition: .3s ease;
+}
+.live-button:hover{
+ background: #1e5050;
+ border: 1px solid #a37100;
+}
+.project:nth-of-type(even) .live-button:hover{
+   background: #133333;
+}
+.live-button > a{
+  color: #1e5050;
+  font-size: 1.3em;
+  letter-spacing: 8px;
+}
+.project:nth-of-type(even) .live-button > a{
+  color: #133333;
+}
+.project:nth-of-type(even) .live-button:hover > a{
+  text-decoration: none;
+  color: #a37100;
+}
+.live-button:hover > a{
+  text-decoration: none;
+  color: #a37100;
+}
 .technology{
   display: inline-block;
   border-radius: 10% 10% 0 0 / 20% 20% 0 0;
@@ -551,7 +595,6 @@ display: block;
 }
 .contact-box{
   position: relative;
-  bottom: 70px;
   z-index: 0;
 }
 .contact-ball{
@@ -740,11 +783,6 @@ flex-direction: column;
   .project-photo{
     margin: auto;
   }
-  .project-technologies >.container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
 }
 @media (max-width: 1060px){
   .category-explanation{
@@ -768,6 +806,9 @@ flex-direction: column;
   .additional{
     display: none;
   }
+  .title h2{
+     font-size: 1.2em;
+   }
 }
 @media only screen and (max-width: 600px){
   .contact-ball{
@@ -796,6 +837,20 @@ flex-direction: column;
   }
   .row-features{
     flex-wrap: wrap;
+  }
+  .project-technologies >.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .project-technologies >.container > .technology{
+    margin: auto;
+    width: 90%;
+    border-radius: 0;
+  }
+  .project-technologies >.container > .technology:first-of-type{
+    border-radius: 8px 8px 0 0;
   }
 }
 

@@ -221,7 +221,10 @@ $_SESSION['language'] = 'english';
                                     Anwers for puzzles are also taken from the server on the run to prevent users from checking out the solution before the move. <br>
                                     Library <a href="http://chessboardjs.com">chessboardjs</a> is used in a project. It is responsible for the board and pieces display.
                                     Database of puzzles and matches is constantly expanding. <br>
-                                    <a href="https://github.com/PrzemyslawKonefal/Chess-Website"><i class="fab fa-github-square fa-2x" style="margin:50px 0;"></i></a>
+                                    <div class="project-links">
+                                    <a href="https://github.com/PrzemyslawKonefal/Chess-Website"><i class="fab fa-github-square fa-2x"></i></a>
+                                    <button class="live-button"><a href="http://chessyes.eu">Live</a></button>
+                                    </div>
                                   </p>
                                 </div>
                                 <div class="project-technologies">
@@ -243,7 +246,10 @@ $_SESSION['language'] = 'english';
                                       Application generates two dimensional building plans divided into floors and spaces.<br>
                                       Spaces legend makes the navigation easier. <br>
                                       One of the application's properties is verifying the main rules of building creation. <br>
-                                      <a href="https://github.com/PrzemyslawKonefal/BIM-model-creator"><i class="fab fa-github-square fa-2x" style="margin:50px 0;"></i></a>
+                                      <div class="project-links">
+                                      <a href="https://github.com/PrzemyslawKonefal/BIM-model-creator"><i class="fab fa-github-square fa-2x"></i></a>
+                                      <button class="live-button"><a href="http://przemkon.pl/projects/BIM">Live</a></button>
+                                      </div>
                                     </p>
 
 
@@ -265,7 +271,10 @@ $_SESSION['language'] = 'english';
                                                Catch Up Time uses Pomodoro technique to help you manage your tasks.
                                                Despite Pomodoro intervals being preset, it allows to manipulate intervals creation however the user wants to.
                                                Additionally, the tool is equipped with 'to do' list, which is a necessity for anyone who respects the time.<br>
-                                               <a href="https://github.com/PrzemyslawKonefal/Pomodoro-clock"><i class="fab fa-github-square fa-2x" style="margin:50px 0;"></i></a>
+                                               <div class="project-links">
+                                               <a href="https://github.com/PrzemyslawKonefal/Pomodoro-clock"><i class="fab fa-github-square fa-2x"></i></a>
+                                               <button class="live-button"><a href="http://catch-up-time.com">Live</a></button>
+                                               </div>
                                               </p>
 
                                             </div>
